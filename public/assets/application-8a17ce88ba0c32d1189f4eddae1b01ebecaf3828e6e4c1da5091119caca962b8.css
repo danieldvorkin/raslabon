@@ -1,0 +1,1017 @@
+/*
+
+Hydro Template 
+
+http://www.templatemo.com/tm-509-hydro
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+/* line 15, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+body {
+  background: #ffffff !important;
+  font-family: 'Poppins', sans-serif !important;
+  overflow-x: hidden !important;
+}
+
+/*---------------------------------------
+    TYPOGRAPHY              
+ -----------------------------------------*/
+/* line 25, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: inherit;
+  letter-spacing: -1px;
+}
+
+/* line 36, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+h1 {
+  color: #292929;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+/* line 42, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+h2 {
+  color: #393939;
+  font-size: 2em;
+}
+
+/* line 47, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+h3 {
+  color: #505050;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+/* line 54, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+h4 {
+  color: #696969;
+  font-size: 18px;
+  line-height: normal;
+}
+
+/* line 60, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+/* line 67, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+strong {
+  font-weight: 500;
+}
+
+/*---------------------------------------
+    GENERAL               
+ -----------------------------------------*/
+/* line 75, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 81, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 88, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+a {
+  color: #252525;
+  font-weight: normal;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+
+/* line 96, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+a:hover,
+a:active,
+a:focus {
+  color: #ce3232;
+  outline: none;
+}
+
+/* line 103, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.section-title {
+  margin-bottom: 60px;
+}
+
+/* line 107, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.section-title h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+
+/* line 113, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.section-title .line-bar {
+  color: #d9d9d9;
+  display: block;
+  font-size: 5em;
+  line-height: 0;
+}
+
+/* line 120, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.section-btn {
+  background: #ce3232;
+  border: 0;
+  border-radius: 100px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 15px 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 133, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.section-btn:hover,
+.section-btn:focus {
+  background: #00f260 !important;
+  /* fallback for old browsers */
+  border-color: transparent !important;
+  color: #393939 !important;
+}
+
+/* line 150, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.overlay {
+  background: #00f260 !important;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575e6, #00f260) !important;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575e6, #00f260) !important;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.7 !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+}
+
+/* line 171, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+section {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  text-align: center !important;
+}
+
+/*---------------------------------------
+      PRE LOADER              
+ -----------------------------------------*/
+/* line 181, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+/* line 195, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.spinner {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  position: relative;
+}
+
+/* line 201, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 1px solid #575757;
+  border-top-color: #ffffff;
+  animation: spinner .9s linear infinite;
+}
+
+@-webkit- @keyframes spinner {
+  /* line 218, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*---------------------------------------
+     MENU              
+ -----------------------------------------*/
+/*---------------------------------------
+     HOME              
+ -----------------------------------------*/
+/* line 359, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#home {
+  background: url("../assets/home-bg.jpg") no-repeat center center;
+  background-size: cover;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10em;
+  text-align: left;
+}
+
+/* line 378, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#home h1 {
+  color: #ffffff;
+}
+
+/* line 382, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.home-info .section-btn {
+  background: transparent;
+  border: 2px solid #f9f9f9;
+  color: #f9f9f9;
+}
+
+/* line 388, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.home-info .section-btn:hover,
+.home-info .section-btn:focus {
+  background: #ce3232;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+/* line 395, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.home-info span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #f9f9f9;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+/* line 403, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.home-info span small {
+  display: block;
+}
+
+/*---------------------------------------
+     ABOUT              
+ -----------------------------------------*/
+/* line 411, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#about {
+  text-align: left;
+  padding-bottom: 0;
+}
+
+/* line 416, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#about .about-info:first-child {
+  margin-right: 40px;
+}
+
+/* line 420, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.about-info .section-title {
+  margin: 40px 0 40px 0;
+}
+
+/* line 424, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.about-info {
+  margin-top: 60px;
+}
+
+/* line 428, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.skill-thumb strong {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* line 433, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.skill-thumb .progress {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: none;
+  height: 3px;
+  margin-bottom: 25px;
+}
+
+/* line 441, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.skill-thumb .progress-bar {
+  background: #1f1f1f;
+  box-shadow: none;
+}
+
+/*---------------------------------------
+     WORK             
+ -----------------------------------------*/
+/* line 450, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.work-info img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+/* line 455, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#work .work-thumb {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* line 462, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.work-thumb .work-info {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* line 475, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.work-thumb .work-info:after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  content: "";
+  background: #ce3232;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* line 487, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.work-thumb .work-info:hover::after {
+  opacity: 0.9;
+}
+
+/* line 491, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.work-thumb .work-info h3,
+.work-thumb .work-info small {
+  transform: translateY(100%);
+  opacity: 0;
+  display: block;
+  transition: 0.5s 0.2s;
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+
+/* line 502, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.work-thumb .work-info small {
+  color: #d9d9d9;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 3px;
+}
+
+/* line 511, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.work-thumb:hover .work-info h3,
+.work-thumb:hover .work-info small {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*---------------------------------------
+     BLOG             
+ -----------------------------------------*/
+/* line 521, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#blog {
+  background: #f0f0f0;
+}
+
+/* line 525, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#blog-header,
+#blog-detail {
+  text-align: left;
+}
+
+/* line 530, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#blog-header {
+  background: url("../images/blog-header-bg.jpg") no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 65vh;
+  color: #ffffff;
+  position: relative;
+  padding-top: 12em;
+}
+
+/* line 547, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#blog-header h2 {
+  color: #ffffff;
+}
+
+/* line 551, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-thumb {
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-align: left;
+  margin-bottom: 30px;
+  height: 364px;
+}
+
+/* line 562, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.media.blog-thumb .media-left {
+  width: 45%;
+}
+
+/* line 566, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-thumb small {
+  color: #ce3232;
+  font-weight: 500;
+  display: block;
+}
+
+/* line 572, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-thumb small .fa {
+  margin-right: 5px;
+}
+
+/* line 576, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-thumb h4 {
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+/* line 581, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#blog-detail h2 {
+  padding: 25px 0 10px 0;
+}
+
+/* line 585, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-info {
+  padding: 75px 25px;
+}
+
+/* line 589, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-info h3 {
+  margin: 0;
+  padding: 8px 0 6px 0;
+  text-transform: capitalize;
+}
+
+/* line 595, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-info .section-btn {
+  background: #f0f0f0;
+  color: #393939;
+  margin-top: 20px;
+}
+
+/* line 601, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-info .section-btn:hover {
+  background: #00f260;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575e6, #00f260);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575e6, #00f260);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+}
+
+/* line 616, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-thumb ul {
+  margin: 32px 12px 22px 0px;
+}
+
+/* line 620, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-thumb ul li {
+  list-style: square;
+  font-weight: normal;
+  padding: 4px 12px 4px 0px;
+}
+
+/* line 626, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-social-share {
+  text-align: center;
+  padding-top: 22px;
+}
+
+/* line 631, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-social-share .btn {
+  border-radius: 100px;
+  border: none;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 20px 6px;
+  padding: 10px 16px;
+}
+
+/* line 641, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-social-share .btn-primary {
+  background: #3b5998;
+}
+
+/* line 645, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-social-share .btn-success {
+  background: #1da1f2;
+}
+
+/* line 649, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-social-share .btn-danger {
+  background: #dd4b39;
+}
+
+/* line 653, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-social-share a .fa {
+  padding-right: 4px;
+}
+
+/* line 657, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-ads {
+  background: #f9f9f9;
+  border-right: 4px solid #2b2b2b;
+  padding: 42px;
+  text-align: center;
+  margin: 26px 0 26px 0;
+}
+
+/* line 665, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.blog-ads h4 {
+  font-size: 18px;
+}
+
+/*---------------------------------------
+     CONTACTS             
+ -----------------------------------------*/
+/* line 673, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#contact {
+  background: #00f260;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575e6, #00f260);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575e6, #00f260);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* line 687, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#contact .section-title h2 {
+  color: #ffffff;
+}
+
+/* line 691, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.google-map {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* line 699, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.google-map iframe {
+  border: 0;
+  width: 300px;
+  height: 300px;
+}
+
+/* line 705, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#contact .form-control {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: none;
+  color: rgba(20, 20, 20, 0.5);
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  padding-left: 8px;
+}
+
+/* line 716, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#contact input,
+#contact select {
+  height: 55px;
+}
+
+/* line 721, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#contact select {
+  color: rgba(20, 20, 20, 0.5);
+}
+
+/* line 725, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+#contact input[type='submit'] {
+  background: #ce3232;
+  border-radius: 100px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/*---------------------------------------
+    FOOTER              
+ -----------------------------------------*/
+/* line 736, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+footer {
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+/* line 753, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+footer h2 {
+  color: #ffffff;
+}
+
+/* line 757, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.footer-link {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 762, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.footer-link li {
+  display: block;
+  list-style: none;
+  margin: 5px 10px 5px 0;
+}
+
+/* line 768, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+footer p,
+footer span,
+.footer-link li a {
+  color: #d9d9d9;
+}
+
+/* line 774, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.copyright-text p,
+.footer-bottom .phone-contact p {
+  font-size: 14px;
+}
+
+/* line 779, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.footer-info p {
+  margin-right: 4em;
+}
+
+/* line 783, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 5em;
+  padding-top: 3em;
+}
+
+/* line 789, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.footer-bottom .phone-contact,
+.footer-bottom .social-icon {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 795, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.footer-bottom .phone-contact {
+  margin-right: 40px;
+}
+
+/* line 799, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.footer-bottom .phone-contact span {
+  font-weight: 500;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/*---------------------------------------
+    SOCIAL ICON              
+ -----------------------------------------*/
+/* line 809, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.social-icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 815, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+/* line 820, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.social-icon li a {
+  border-radius: 100px;
+  color: #d9d9d9;
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+  margin: 5px 10px;
+}
+
+/* line 829, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.social-icon li a:hover {
+  color: #ce3232;
+}
+
+/*---------------------------------------
+     MODAL FORM             
+ -----------------------------------------*/
+@media (min-width: 992px) {
+  /* line 838, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .modal-dialog {
+    width: 420px;
+  }
+}
+/* line 843, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-open .modal {
+  padding-left: 0 !important;
+}
+
+/* line 847, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog .modal-content {
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  position: relative;
+  padding: 2em;
+}
+
+/* line 866, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-header,
+.modal-footer {
+  border-bottom: 0;
+  padding: 0;
+}
+
+/* line 872, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog .modal-body {
+  padding: 0;
+}
+
+/* line 876, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog .modal-body a {
+  color: #d9d9d9;
+}
+
+/* line 880, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal .close {
+  color: #999;
+  font-size: 40px;
+  font-weight: 300;
+  text-shadow: none;
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 100;
+  outline: none;
+}
+
+/* line 893, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog .modal-title {
+  margin-bottom: 20px;
+}
+
+/* line 897, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog .modal-title h2 {
+  color: #ffffff;
+}
+
+/* line 901, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog .nav-tabs {
+  display: inline-block;
+}
+
+/* line 905, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog .nav-tabs > li > a {
+  border: 0;
+  color: #999999;
+  margin-right: 0;
+}
+
+/* line 911, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog .nav-tabs > li.active > a,
+.modal-dialog .nav-tabs > li.active > a:hover,
+.modal-dialog .nav-tabs > li.active > a:focus,
+.modal-dialog .nav > li > a:focus,
+.modal-dialog .nav > li > a:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ce3232;
+}
+
+/* line 922, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog .tab-content {
+  padding-top: 20px;
+}
+
+/* line 926, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog form .form-control {
+  border-radius: 5px;
+  border: 1px solid #595959;
+  background: transparent;
+  box-shadow: none;
+  margin: 15px 0 15px 0;
+  height: 50px;
+}
+
+/* line 935, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog form .form-control:hover,
+.modal-dialog form .form-control:focus {
+  border-color: #ffffff;
+}
+
+/* line 940, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+.modal-dialog form input[type="submit"] {
+  background: #ce3232;
+  border-color: transparent;
+  border-radius: 100px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+/*---------------------------------------
+    RESPONSIVE STYLES              
+ -----------------------------------------*/
+@media screen and (max-width: 991px) {
+  /* line 959, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  h3 {
+    font-size: 1.2em;
+  }
+
+  /* line 963, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  p {
+    font-size: 13px;
+  }
+
+  /* line 967, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  #home {
+    text-align: center;
+  }
+
+  /* line 971, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .home-info {
+    margin-bottom: 3em;
+  }
+
+  /* line 985, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .blog-thumb {
+    height: inherit;
+  }
+
+  /* line 989, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .blog-info {
+    padding: 45px 25px;
+  }
+
+  /* line 993, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .media.blog-thumb .media-left {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    overflow: hidden;
+  }
+
+  /* line 1000, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .media.blog-thumb .media-left {
+    height: 250px;
+  }
+
+  /* line 1004, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .media.blog-thumb .media-left img {
+    position: relative;
+    bottom: 10em;
+  }
+
+  /* line 1009, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  #work .work-thumb,
+  .footer-thumb {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  /* line 1017, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  #blog-header {
+    height: 100vh;
+  }
+
+  /* line 1021, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .media.blog-thumb .media-left {
+    height: 550px;
+  }
+
+  /* line 1025, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .media.blog-thumb .media-left img {
+    position: relative;
+    bottom: 10em;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 1081, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .home-info span {
+    margin-top: 20px;
+  }
+
+  /* line 1085, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  #about .about-info:first-child {
+    margin-right: 0;
+  }
+
+  /* line 1089, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .about-info {
+    margin: 40px 0 40px 0;
+  }
+
+  /* line 1093, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .google-map {
+    margin-top: 50px;
+  }
+
+  /* line 1097, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  footer {
+    text-align: center;
+  }
+
+  /* line 1101, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .footer-info p,
+  .footer-bottom .phone-contact {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 639px) {
+  /* line 1108, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  h1 {
+    font-size: 2em;
+  }
+
+  /* line 1112, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .media.blog-thumb .media-left {
+    height: 320px;
+  }
+
+  /* line 1116, /Users/danieldvorkin/Desktop/Projects/raslabon/app/assets/stylesheets/visitors.scss */
+  .media.blog-thumb .media-left img {
+    position: relative;
+    bottom: 6em;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
